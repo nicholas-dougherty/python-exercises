@@ -4,12 +4,12 @@
 def is_two(two):
     return two == 2 or two == "two" or two == '2'
 
-is_two("two") # True
-is_two(2) # True
-is_two('2') # True
-is_two(4) # False
-is_two("six") # False
-print(is_two(222222))
+# is_two("two") # True
+# is_two(2) # True
+# is_two('2') # True
+# is_two(4) # False
+# is_two("six") # False
+# print(is_two(222222))
 
 def is_two(n):
     n == 2 or n == '2'
@@ -37,10 +37,10 @@ def is_vowel(l):
     else:
         return False
 
-is_vowel('vowel') #false
-is_vowel('e') #true
-is_vowel('T') #false
-is_vowel('U') #true
+# is_vowel('vowel') #false
+# is_vowel('e') #true
+# is_vowel('T') #false
+# is_vowel('U') #true
 
 def is_vowel(somestring):
     if type(somestring) == str:
@@ -59,10 +59,10 @@ def is_consonant(l):
     else:
         return False
     
-is_consonant('e')
-is_consonant('g')
-is_consonant('a')
-is_consonant('j')
+# is_consonant('e')
+# is_consonant('g')
+# is_consonant('a')
+# is_consonant('j')
 
 def is_consonant():
     if type(somestring) == str:
@@ -80,8 +80,8 @@ def cap_cons(str):
     else:
         return str
 
-cap_cons('dolphin') #capitalized first word. Awesome. 
-cap_cons('eagle') #didn't capitalize first word. Bingo. 
+# cap_cons('dolphin') #capitalized first word. Awesome. 
+# cap_cons('eagle') #didn't capitalize first word. Bingo. 
 
 def caps_con(string):
     if type(string) != str:
@@ -97,7 +97,7 @@ def caps_con(string):
 def calculate_tip(percentage, bill):
     return percentage * bill
 
-calculate_tip(.15, 90) # $13.5
+# calculate_tip(.15, 90) # $13.5
 
 def total(float):
     return calculate_tip(.15, 90) + float
@@ -118,7 +118,7 @@ def calculate_tip(bill, tip_percentage=0.2):
 def apply_discount(original, discount):
     return original - (original * discount)
 
-apply_discount(10, .2) # $8.00. Success. 
+# apply_discount(10, .2) # $8.00. Success. 
 
 def apply_discount(price, discount_percentage):
     discount = price * discount_percentage
@@ -141,7 +141,7 @@ def handle_commas(somestring):
         return 'input must be a string that is a number'
 
 #   look into the try function: (try: except:)
-handle_commas('2,000,000') # 2000000 Check. 
+# handle_commas('2,000,000') # 2000000 Check. 
 
 # 8.) Define a function named get_letter_grade. It should accept a number and return 
 #  the letter grade associated with that number (A-F).
@@ -161,9 +161,9 @@ def get_letter_grade(grade):
     else: 
         return 'Input must be a number'
 
-get_letter_grade(89) # B. Right.
-get_letter_grade(69) # D. Correct.
-get_letter_grade(73) # C. YUP.
+# get_letter_grade(89) # B. Right.
+# get_letter_grade(69) # D. Correct.
+# get_letter_grade(73) # C. YUP.
 
 # 9.) Define a function named remove_vowels that accepts a string and returns a 
 #  string with all the vowels removed.
@@ -176,7 +176,7 @@ def remove_vowels(str):
     return result
 print(remove_vowels)
 
-remove_vowels('dingus') #dngs. Sweet. 
+# remove_vowels('dingus') #dngs. Sweet. 
 
 def remove_vowels(str):
     str = str.lower()
@@ -186,7 +186,7 @@ def remove_vowels(str):
     return result
 print(remove_vowels)
 
-remove_vowels('dingus') #dngs again. 
+# remove_vowels('dingus') #dngs again. 
 
 def remove_vowels(somestring):
     if type(somestring) != str:
@@ -224,7 +224,7 @@ def normalize_name(string):
         return output
 
 
-normalize_name('DolPhins Are sO CoOl')
+# normalize_name('DolPhins Are sO CoOl')
 
 # 11.) Write a function named cumulative_sum that accepts a list of numbers and 
 #    returns a list that is the cumulative sum of the numbers in the list.
@@ -237,7 +237,7 @@ def cumulative_sum(list):
         total += x
         yield total
 
-list(cumulative_sum([1, 2, 3, 4]))
+# list(cumulative_sum([1, 2, 3, 4]))
 
 somenums = [1,2,3,4,5]
 for placeholder, num in enumerate(somenums):
