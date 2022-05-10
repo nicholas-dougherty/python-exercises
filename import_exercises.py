@@ -1,22 +1,61 @@
+# Import Exercises
+# ---------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------
+# Terminology
+# 
+# Before going into imports, let's discuss some terminology:
+# 
+# A Module is an python file with a .py extension.
+# 
+# Modules contain functions and variables. A module can exist in:
+# 
+#      The python standard library
+#      Community developed packages
+#      Your working directory as a file that you have created.
+#
+# A Package is a directory that contains modules.
+# 
+# It can also consist of other packages, or 'sub-packages'. Packages are a way to distribute one or more modules. We install     #        packages in order to be able to import modules or libraries for use.
+# 
+# A Library is a collection of code, data, documentation, and configuration, usually purpose built for specific tasks.
+# 
+# Libraries can be very large in scope like numpy, a library the forms the base for most other scientific packages in python, or # matplotlib, the library we'll use for data visualization. Other libraries are smaller in scope, like requests, a library for   #  sending HTTP requests.
+# 
+# The Python Package Index, PyPI, https://pypi.org/, is a repository of community developed Python packages.
+# 
+# Anaconda's Conda product is a package manager. It helps you find and install 3rd party packages.
+# ---------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------
 import function_exercises as fun
 fun.is_vowel('a')
+
 from function_exercises import calculate_tip
+
 fun.calculate_tip(50.25, .2)
 dir(fun)
+
+
 from inspect import getmembers, isfunction
 print(getmembers(calculate_tip, isfunction))
 help(calculate_tip)
-# sweet, so now I know how to recall the parameters of an imported function. 
+
+# help is one way to check a functions parameters. jupyterlab enables it through shift-tab in parentheses 
+# alternatively, type the function and a question mark after in jupyter lab and execute the cell.
+# ---------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------
 
 # 2. Read about and use the itertools module from the python standard library 
 #    to help you solve the following problems:
 
 # a. How many different ways can you combine the letters from "abc" 
 #    with the numbers 1, 2, and 3?
+
 import itertools
 aseasyas = ('a', 'b', 'c', 1, 2, 3)
 len(list(itertools.combinations(aseasyas, 2))) # 15
 len(list(itertools.combinations(aseasyas, 3))) #20
+
 # b. How many different combinations are there of 2 letters from "abcd"?
 
 import itertools
@@ -98,4 +137,5 @@ dict = json.load(open('profiles.json'))
 import json
 dict = json.load(open('profiles.json'))
 
-UPDATE
+# ---------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------

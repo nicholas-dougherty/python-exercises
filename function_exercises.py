@@ -1,3 +1,24 @@
+# ▄████ ▄      ▄   ▄█▄      ▄▄▄▄▀ ▄█ ████▄    ▄                      
+# █▀   ▀ █      █  █▀ ▀▄ ▀▀▀ █    ██ █   █     █                     
+# █▀▀ █   █ ██   █ █   ▀     █    ██ █   █ ██   █                    
+# █   █   █ █ █  █ █▄  ▄▀   █     ▐█ ▀████ █ █  █                    
+#  █  █▄ ▄█ █  █ █ ▀███▀   ▀       ▐       █  █ █                    
+#   ▀  ▀▀▀  █   ██                         █   ██                    
+# ▄███▄      ▄  ▄███▄   █▄▄▄▄ ▄█▄    ▄█    ▄▄▄▄▄   ▄███▄     ▄▄▄▄▄   
+# █▀   ▀ ▀▄   █ █▀   ▀  █  ▄▀ █▀ ▀▄  ██   █     ▀▄ █▀   ▀   █     ▀▄ 
+# ██▄▄     █ ▀  ██▄▄    █▀▀▌  █   ▀  ██ ▄  ▀▀▀▀▄   ██▄▄   ▄  ▀▀▀▀▄   
+# █▄   ▄▀ ▄ █   █▄   ▄▀ █  █  █▄  ▄▀ ▐█  ▀▄▄▄▄▀    █▄   ▄▀ ▀▄▄▄▄▀    
+# ▀███▀  █   ▀▄ ▀███▀     █   ▀███▀   ▐            ▀███▀             
+#         ▀              ▀                                           
+#                                                                                                                                                                                                                                                                                                                                    
+#     ,---,.   ,---,.   ,---,.   ,---,.   ,---,.   ,---,.   ,---,.   ,---,.   ,---,. 
+#   ,'  .' | ,'  .' | ,'  .' | ,'  .' | ,'  .' | ,'  .' | ,'  .' | ,'  .' | ,'  .' | 
+# ,---.'   ,---.'   ,---.'   ,---.'   ,---.'   ,---.'   ,---.'   ,---.'   ,---.'   , 
+# |   |    |   |    |   |    |   |    |   |    |   |    |   |    |   |    |   |    | 
+# :   :  .':   :  .':   :  .':   :  .':   :  .':   :  .':   :  .':   :  .':   :  .'  
+# :   |.'  :   |.'  :   |.'  :   |.'  :   |.'  :   |.'  :   |.'  :   |.'  :   |.'    
+# `---'    `---'    `---'    `---'    `---'    `---'    `---'    `---'    `---'                                                                                                                                                                                                                                                                                                                 #---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 1.) Define a function named is_two. It should accept one input and return True
 #  if the passed input is either the number or the string 2, False otherwise.
 
@@ -14,7 +35,8 @@ def is_two(two):
 def is_two(n):
     n == 2 or n == '2'
 # assert is_two(2) == True # assertions aren't working for me. 
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 2.) Define a function named is_vowel. It should return True if the passed
 #  string is a vowel, False otherwise.
 
@@ -48,7 +70,8 @@ def is_vowel(somestring):
         return result
     else:
         return False
- 
+#---------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------  
 # 3.) Define a function named is_consonant. It should return True if the passed
 #  string is a consonant, False otherwise. Use your is_vowel function to accomplish this.
 
@@ -63,13 +86,15 @@ def is_consonant(l):
 # is_consonant('g')
 # is_consonant('a')
 # is_consonant('j')
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 def is_consonant():
     if type(somestring) == str:
         only_letters = somestring.isalpha()
         return only_letters and not is_vowel(somestring)
     return False
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 4.) Define a function that accepts a string that is a word. The function should 
 # capitalize the first letter of the word if the word starts with a consonant.
 
@@ -90,7 +115,8 @@ def caps_con(string):
     if caps_con(first_letter):
         string = string.capitalize()
     return string
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 5.) Define a function named calculate_tip. It should accept a tip percentage 
 # (a number between 0 and 1) and the bill total, and return the amount to tip.
 
@@ -111,7 +137,8 @@ def calculate_tip(bill, tip_percentage=0.2):
     if tip_percentage < 0 or tip_percentage > 1:
         return 'the tip percentage must be between 0 and 1'
     return tip_percentage * bill
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 6.) Define a function named apply_discount. It should accept a original price, and a 
 # discount percentage, and return the price after the discount is applied.
 
@@ -123,7 +150,8 @@ def apply_discount(original, discount):
 def apply_discount(price, discount_percentage):
     discount = price * discount_percentage
     return price - discount
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 7.) Define a function named handle_commas. It should accept a string that is a number
 #  that contains commas in it as input, and return a number as output.
 
@@ -142,7 +170,8 @@ def handle_commas(somestring):
 
 #   look into the try function: (try: except:)
 # handle_commas('2,000,000') # 2000000 Check. 
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 8.) Define a function named get_letter_grade. It should accept a number and return 
 #  the letter grade associated with that number (A-F).
 
@@ -164,7 +193,8 @@ def get_letter_grade(grade):
 # get_letter_grade(89) # B. Right.
 # get_letter_grade(69) # D. Correct.
 # get_letter_grade(73) # C. YUP.
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 9.) Define a function named remove_vowels that accepts a string and returns a 
 #  string with all the vowels removed.
 
@@ -197,7 +227,8 @@ def remove_vowels(somestring):
             output += l
     return output
 
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 10.) Define a function named normalize_name. It should accept a string and 
 #   return a valid python identifier, that is:
 #   anything that is not a valid python identifier should be removed
@@ -225,7 +256,8 @@ def normalize_name(string):
 
 
 # normalize_name('DolPhins Are sO CoOl')
-
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
 # 11.) Write a function named cumulative_sum that accepts a list of numbers and 
 #    returns a list that is the cumulative sum of the numbers in the list.
 #    cumulative_sum([1, 1, 1]) returns [1, 2, 3]
@@ -250,3 +282,7 @@ def cumulative_sum(somenums):
         sum_so_far = sum(somenums[:i + 1])
         output.append(sum_so_far)
     return output
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
+#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------- 
