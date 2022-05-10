@@ -22,11 +22,14 @@
 # /  /`--'  /;  :    ;        |  , ;   '  :  `--'   \        '   | '.'| ;  :    ;        '  :  `--'   \  , ;           '   |  / | /  /`--'  / 
 #'--'.     / |  ,   /          ---'    :  ,      .-./        |   :    : |  ,   /         :  ,      .-./---'            |   :    |'--'.     /  
 #  `--'---'   ---`-'                    `--`----'             \   \  /   ---`-'           `--`----'                     \   \  /   `--'---'   
-#                                                              `----'                                                    `----'               
-                                                                                                                            
-# 1.)Conditional Basics
+#                                                              `----'                                                    `----' ################################################################################################################################ #      
+#   ____   #-----------------------------------------------------------------------------------------------------------------
+# /\____/\ #-----------------------------------------------------------------------------------------------------------------
+# \/____\/ #-----------------------------------------------------------------------------------------------------------------                                                                                                                             
+#-----------------------------------------------------------------------------------------------------------------
 
-# a. prompt the user for a day of the week, print out whether the day is Monday or not
+# 1.)Conditional Basics
+#     a. prompt the user for a day of the week, print out whether the day is Monday or not
 
 day = input('What day of the week is it?')
 
@@ -34,7 +37,7 @@ if day.lower() in('Monday', 'M', 'Mon'):
     print('It is Monday.')
 else:
     print('Thankfully it is not Monday.')
-
+#-----------------------------------------------------------------------------------------------------------------
 # b. prompt the user for a day of the week, print out whether the day is a weekday or a weekend
 
 print('What day of the week is it? Use the following format: M, T, W, R, F, S, Su')
@@ -44,20 +47,18 @@ if day in('M', 'T', 'W', 'R', 'F'):
     print('Today is a weekday. WEAK.')
 else:
     print('The weekend is upon us.')
-#################################################
+# # # # # # 
 day_of_week = input('What day of the week is it?')
 if day_of_week.lower().startswith('s'):
     print('weekend')
 else:
     print('get to work')
+#-----------------------------------------------------------------------------------------------------------------
 
-
-# c. create variables and make up values for
-#the number of hours worked in one week
-#the hourly rate
-#how much the week's paycheck will be
+# c. create variables and make up values for the number of hours worked in one week
+#the hourly rate; how much the week's paycheck will be.
 #write the python code that calculates the weekly paycheck.
-#You get paid time and a half if you work more than 40 hours'''
+#You get paid time and a half if you work more than 40 hours
 
 weekly_hours = 50
 hourly_rate = 27
@@ -67,7 +68,7 @@ if weekly_hours <= 40:
 else: 
     payout = (40 * hourly_rate) + ((weekly_hours - 40) * overtime)
 print(payout)
-#################################################
+# # # # # 
 hours_worked_in_week = 42
 hourly_rate = 14.89
 if hours_worked_in_week <= 40:
@@ -79,6 +80,9 @@ else:
     paycheck = base_pay + overtime_pay 
 
 print(paycheck)
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 
 # 2.) Loop Basics
 
@@ -97,7 +101,7 @@ while int <= 15:
     #this gives the same output. 
 
     #? why is it that if print is put on the following line, it goes from 6 to 16?
-    
+#-----------------------------------------------------------------------------------------------------------------    
 # i. Create a while loop that will count by 2's starting with 0 and ending at 100. 
 # Follow each number with a new line.
 
@@ -105,7 +109,7 @@ int = 0
 while int <= 100:
     print(int)
     int += 2
-
+#-----------------------------------------------------------------------------------------------------------------
 
 # ii. Alter your loop to count backwards by 5's from 100 to -10.
 
@@ -120,7 +124,7 @@ int = 100
 while int >= -10:
     print(int)
     int -= 5
-
+#-----------------------------------------------------------------------------------------------------------------
 
 # iii. Create a while loop that starts at 2, and displays the number squared on each line 
 # while the number is less than 1,000,000. Output should equal:
@@ -129,14 +133,15 @@ while int < 1000000:
     print(int)
     int = int * int
     # this runs and calculates in notebook, but not here. 
-
+#-----------------------------------------------------------------------------------------------------------------
 # iv. Write a loop that uses print to create the output shown below (descending by five)
 
 count = 100
 while count >= 5:
     print(count)
     count -= 5
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 # 2b.) FOR LOOPS
 
 # Write some code that prompts the user for a number, 
@@ -145,6 +150,7 @@ while count >= 5:
 number = input('Enter an integer.')
 for x in range(1, 11):
     print(number, 'x', x, '=', int(number) * x)
+    
 ########################################
     
 proposed_num = input('please insert a positive integer')
@@ -153,7 +159,7 @@ int(proposed_num)
 int('seven')
 for n in range(1, 11):
     print(f'{proposed_num} X {n} = {int(proposed_num) * n}')
-
+#-----------------------------------------------------------------------------------------------------------------
 # ii. Create a for loop that uses print to create the output shown below
 
 number = 1
@@ -165,7 +171,8 @@ for x in range(1, 10):
 #################
 for n in range(1, 10):
     print(str(n) * n)
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 # 2c.) Break and Continue. 
 # Prompt the user for an odd number between 1 and 50. 
 #Use a loop and a break statement to continue prompting the user if they enter 
@@ -192,7 +199,8 @@ for num in range(1, 50, 2):
         print('Yikes! Skipping number: ', num)
     else:
         print('Here is an odd number: ', num)
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 
 
 # 2d. 
@@ -208,9 +216,13 @@ while True:
 user = int(user)
 for x in range(user +1):
     print(x)
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 #2e. Write a program that prompts the user for a positive integer. Next write a loop
 #    that prints out the numbers from the number the user entered down to 1.
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 
 # 3.) Fizzbuzz
 
@@ -249,6 +261,10 @@ for x in range(1, 101):
 
 
 # it does work in that order though.. seems order matters here more than SQL. 
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+
 # 4.) Display a table of powers.
 
 # Prompt the user to enter an integer.
@@ -273,7 +289,9 @@ if proceed.lower().startswith(y):
         i_cubed = i ** 3
         print(f'{i: 6} | {i_squared: 7} | {i_cubed: 5}')
 
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 
 
 # 5.) 
@@ -300,7 +318,7 @@ user_grade = input('Insert your numbered grade.')
      #   print('F')
 
         # this just listed a bunch of F's. F.
-
+#-----------------------------------------------------------------------------------------------------------------
 user_grade = int(input('Insert your numbered grade.'))
 if user_grade >= 88:
     print('A')
@@ -315,7 +333,7 @@ else:
 # TypeError: '>=' not supported between instances of 'str' and 'int'
 # specify input as integer. 
 # Bingo.
-
+#-----------------------------------------------------------------------------------------------------------------
 while True:
     user_number = input('Plese enter a numeral between 0 and 100: ')
     if user_number.isdigit():
@@ -335,7 +353,9 @@ while True:
         grade = 'B'
     else:
         grade = 'A'
-
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
 
 # 6.) 
 # Create a list of dictionaries where each dictionary represents a book that
@@ -374,3 +394,6 @@ if matches ==[]:
 else:
     print(f'I have the following titles in that genre {picked_genre}')
     [print(match) for ]
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------
